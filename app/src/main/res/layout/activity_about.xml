@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About"
+    android:background="@color/backgroundBlue">
+
+    <ImageView
+        android:id="@+id/bckgrnd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:alpha=".2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.777"
+        app:srcCompat="@mipmap/app_logo_foreground" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@color/colorPrimaryDark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:src="@mipmap/app_logo_foreground"
+                    android:layout_marginStart="160dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="84dp"
+                    android:text="About"
+                    android:textColor="#ffff"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/horti"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:textColor="@color/textBlack"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

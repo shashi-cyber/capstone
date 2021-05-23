@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADD8E6"
+    tools:context=".SignIn">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@mipmap/app_logo_foreground"
+        android:id="@+id/logo"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_marginTop="60dp"
+        android:elevation="3dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="Email"
+        android:textSize="15dp"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:elevation="3dp"
+        android:textSize="15dp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailId" />
+
+    <CheckBox
+        android:id="@+id/shwpswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Show password"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/forgotpswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="8dp"
+        android:text="Forgot your Password?"
+        android:textColor="#000080"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="119dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="signIn"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        android:text="SIGN IN"
+        android:textColor="#ffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shwpswd" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="16dp"
+        android:text="Don't have an account?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/createAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Create"
+        android:onClick="signUp"
+        android:textColor="#1D0303"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Sign In to your account "
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="SIGN IN"
+        android:textColor="#01011A"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</android.support.constraint.ConstraintLayout>

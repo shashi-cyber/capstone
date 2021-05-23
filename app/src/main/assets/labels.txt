@@ -1,0 +1,22 @@
+Damping off - Chilli
+Fruit rot - Chilli
+Wet rot - Chilli
+Alternaria - Cotton
+Fusarium wilt - Cotton
+Verticilium wilt - Cotton
+Charcoal rot - Maize
+Leaf blight - Maize
+Shealth blight - Maize
+Late Blight - Potato
+Soft rot - Potato
+Blast of rice - Rice
+Brown spot on rice - Rice
+False smut of rice - Rice
+Shealth blight of rice - Rice
+Red rot - Sugar Cane
+Whip smut - Sugar Cane
+Early blight - Tomato
+Stemphylum leaf spot - Tomato
+Leaf rust - Wheat
+Stem rust - Wheat
+Stripe rust - Wheat

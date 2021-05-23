@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundBlue"
+    tools:context=".Fertilizers">
+
+    <ImageView
+        android:id="@+id/bckgrnd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:alpha=".2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.777"
+        app:srcCompat="@mipmap/app_logo_foreground" />
+
+    <ImageView
+        android:id="@+id/fertilizerBckgrnd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="280dp"
+        android:alpha=".2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.777"
+        android:background="@color/colorPrimaryDark"
+        />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="230dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/app_logo_foreground"
+        android:layout_marginStart="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="84dp"
+        android:text="Fertilizers"
+        android:textColor="#ffff"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nitrogen"
+        android:layout_width="62dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="148dp"
+        android:text="Nitogen"
+        android:textColor="@color/textBlack"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/nitro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="148dp"
+        android:text="TextView"
+        android:textColor="@color/textBlack"
+        app:layout_constraintStart_toEndOf="@+id/nitrogen"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/potassium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:text="Potassium"
+        android:textColor="@color/textBlack"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phosphorus" />
+
+    <TextView
+        android:id="@+id/phosphorus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:text="Phosphorus"
+        android:textColor="@color/textBlack"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nitrogen" />
+
+    <TextView
+        android:id="@+id/phos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="56dp"
+        android:text="TextView"
+        android:textColor="@color/textBlack"
+        app:layout_constraintStart_toEndOf="@+id/phosphorus"
+        app:layout_constraintTop_toBottomOf="@+id/nitro" />
+
+    <TextView
+        android:id="@+id/potas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="52dp"
+        android:text="TextView"
+        android:textColor="@color/textBlack"
+        app:layout_constraintStart_toEndOf="@+id/potassium"
+        app:layout_constraintTop_toBottomOf="@+id/phos" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="96dp"
+        android:text="Macro Nutrients"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="56dp"
+        android:text="Micro Nutrients"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/potassium" />
+
+    <ListView
+        android:id="@+id/microList"
+        android:layout_width="371dp"
+        android:layout_height="197dp"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/potas"
+        app:layout_constraintVertical_bias="0.0"
+        />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
+        android:text="For Nitrogen, Urea is used."
+        android:textColor="#2F363F"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nitrogen" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:text="For Phosphorus, Di Ammonium Phosphate is used."
+        android:textColor="#2F363F"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phosphorus" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:text="For Potassium, Murate of Potash is used. "
+        android:textColor="#2F363F"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/potassium" />
+</android.support.constraint.ConstraintLayout>

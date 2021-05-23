@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundBlue"
+    tools:context=".Weather">
+
+    <ImageView
+        android:id="@+id/bckgrnd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:alpha=".2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.777"
+        app:srcCompat="@mipmap/app_logo_foreground" />
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/city"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Weather"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="144dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Fetch Weather"
+        android:textColor="#F3FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:text="City"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:text="Temperature"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit" />
+
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="105dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
+        android:text="Description"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="105dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
+        android:text="Wind Speed"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="105dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:text="Sunrise"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="105dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:text="Sunset"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="105dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:text="Humidity"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        app:layout_constraintVertical_bias="0.302" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/submit" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toEndOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/temp" />
+
+    <TextView
+        android:id="@+id/wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toEndOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/desc" />
+
+    <TextView
+        android:id="@+id/sunrise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/wind" />
+
+    <TextView
+        android:id="@+id/sunset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toEndOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/sunrise" />
+
+    <TextView
+        android:id="@+id/clouds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/sunset" />
+
+
+</android.support.constraint.ConstraintLayout>

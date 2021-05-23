@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Agriculture Management System</string>
+
+    <string-array name="districts">
+        <item>Pathankot</item>
+        <item>Gurdaspur</item>
+        <item>Hoshiarpur</item>
+        <item>Tarn Taran</item>
+        <item>Kapurthala</item>
+        <item>Jalandhar</item>
+        <item>Nawanshahr</item>
+        <item>Rup Nagar</item>
+        <item>Ferozpur</item>
+        <item>Moga</item>
+        <item>Ludhiana</item>
+        <item>Fatehgarh Sahib</item>
+        <item>Chandigarh</item>
+        <item>Faridkot</item>
+        <item>Fazilka</item>
+        <item>Muktsar</item>
+        <item>Bathinda</item>
+        <item>Barnala</item>
+        <item>Sangrur</item>
+        <item>Patiala</item>
+        <item>Mansa</item>
+        <item>Amritsar</item>
+    </string-array>
+
+
+    <string-array name="seasons">
+        <item>Kharif(June-Sept)</item>
+        <item>Rabi(Nov-March)</item>
+        <item>Zaid(March-July)</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "415030639236",
+    "firebase_url": "https://agri-help-f3b02.firebaseio.com",
+    "project_id": "agri-help-f3b02",
+    "storage_bucket": "agri-help-f3b02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:415030639236:android:7822e081e4f9b79059e0d1",
+        "android_client_info": {
+          "package_name": "com.example.agrihelp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "415030639236-qcrl1hp2ts2rbilaf1s611prdat16tgv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.agrihelp",
+            "certificate_hash": "09bd6ca612c2279f238c9111a5484bdd11b44ffc"
+          }
+        },
+        {
+          "client_id": "415030639236-35qsgjjcpbc9mbus2cskl8dggghcdfsg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa07z_3KSawdfocOY5922rTouPsKciGDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "415030639236-35qsgjjcpbc9mbus2cskl8dggghcdfsg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
